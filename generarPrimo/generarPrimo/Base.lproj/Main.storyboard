@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="batman.ttf">
+            <string>BatmanForeverAlternate</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="generarPrimo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsh-tO-sP3">
+                                <rect key="frame" x="8" y="208" width="398" height="15"/>
+                                <fontDescription key="fontDescription" name="BatmanForeverAlternate" family="BatmanForeverAlternate" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S6c-uq-fW2">
+                                <rect key="frame" x="8" y="283" width="398" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGl-9T-1Nh">
+                                <rect key="frame" x="0.0" y="365" width="414" height="38.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Button">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="BatmanForeverOutline"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="generarPrimo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r7A-Wh-ttP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-6w-uAX">
+                                <rect key="frame" x="8" y="445.5" width="398" height="32"/>
+                                <fontDescription key="fontDescription" name="BatmanForeverAlternate" family="BatmanForeverAlternate" pointSize="32"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S6c-uq-fW2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="3VF-9O-7Wm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nsh-tO-sP3" secondAttribute="trailing" constant="8" id="E2K-1m-Rb9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xSe-6w-uAX" secondAttribute="trailing" constant="8" id="HyZ-Xq-9HY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S6c-uq-fW2" secondAttribute="trailing" constant="8" id="M94-Oz-ElX"/>
+                            <constraint firstItem="Nsh-tO-sP3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="UGo-UJ-tkI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OGl-9T-1Nh" secondAttribute="trailing" id="WYO-K9-w8r"/>
+                            <constraint firstItem="S6c-uq-fW2" firstAttribute="top" secondItem="Nsh-tO-sP3" secondAttribute="bottom" constant="60" id="aee-5z-UGs"/>
+                            <constraint firstItem="OGl-9T-1Nh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fvZ-iQ-5KF"/>
+                            <constraint firstItem="xSe-6w-uAX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="mLT-3o-ez3"/>
+                            <constraint firstItem="Nsh-tO-sP3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="164" id="qJ9-nq-AsS"/>
+                            <constraint firstItem="OGl-9T-1Nh" firstAttribute="top" secondItem="S6c-uq-fW2" secondAttribute="bottom" constant="48" id="sKW-AB-1Gn"/>
+                            <constraint firstItem="xSe-6w-uAX" firstAttribute="top" secondItem="OGl-9T-1Nh" secondAttribute="bottom" constant="42" id="t39-yo-e7B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="boton" destination="OGl-9T-1Nh" id="8da-7b-yGN"/>
+                        <outlet property="entrada" destination="S6c-uq-fW2" id="Zx7-Eu-ogw"/>
+                        <outlet property="resultado" destination="xSe-6w-uAX" id="vaQ-bO-vAG"/>
+                        <outlet property="titulo" destination="Nsh-tO-sP3" id="NkP-Hz-u4I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
